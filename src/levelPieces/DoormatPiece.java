@@ -3,12 +3,14 @@ package levelPieces;
 import gameEngine.Drawable;
 import gameEngine.InteractionResult;
 
-public class DoormatPiece extends GamePiece {
+public class DoormatPiece {
 
-	@Override
-	public InteractionResult interact(Drawable[] gameBoard, int playerLocation) {
-		// TODO Auto-generated method stub
-		return null;
+	public DoormatPiece(char symbol, String name, int location) {
+
+		// TODO Auto-generated constructor stub
+	}
+
+	
 	}
 
 }
