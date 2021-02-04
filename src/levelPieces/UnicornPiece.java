@@ -1,9 +1,15 @@
 package levelPieces;
 
 import gameEngine.Drawable;
+import gameEngine.GameEngine;
+import gameEngine.Moveable;
 import gameEngine.InteractionResult;
+import java.util.Random;
 
-public class UnicornPiece extends GamePiece {
+public class UnicornPiece extends GamePiece implements Moveable {
+	private Random randomLocation = new Random();
+	private int location = randomLocation.nextInt();
+
 
 	public UnicornPiece(char symbol, String name, int location) {
 		super(symbol, name, location);
@@ -23,5 +29,15 @@ public class UnicornPiece extends GamePiece {
 	public void draw() {
 		System.out.println('U');
 	}
-
+	
+	@Override
+	public void move(Drawable[] gameBoard, int playerLocation) {
+		// Moves randomly
+		while (gameBoard[location] != null) {
+			location = randomLocation.nextInt(GameEngine.BOARD_SIZE);
+		}  
+		this.setLocation(location);
+	}
+	
+	
 }

@@ -27,3 +27,4 @@ public interface Moveable {
 	 */
 	public void move(Drawable[] gameBoard, int playerLocation);
 }
+//Unicorn sniper player minion
