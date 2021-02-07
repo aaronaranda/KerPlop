@@ -1,0 +1,35 @@
+commit 10cf809b13d9811b529fb8ced70bbb114ba4bf90
+Author: Aaron Aranda <aaronjaranda@mymail.mines.edu>
+Date:   Sun Feb 7 16:32:54 2021 -0700
+
+    added UML
+
+commit 9b97144e7bf4d734a6d2c4766aefda3f8be6efc9
+Author: Aaron Aranda <aaronjaranda@mymail.mines.edu>
+Date:   Sun Feb 7 16:30:35 2021 -0700
+
+    finalized game, new game pieces
+
+commit 32fd4a62b317b4fbb38f387098438bc8eaf91980
+Author: Aaron Aranda <aaronjaranda@mymail.mines.edu>
+Date:   Sun Feb 7 13:27:17 2021 -0700
+
+    removed compile files
+
+commit 7eb0c692ada5a1f04562694f5da0a3ce04c6857c
+Author: Aaron Aranda <aaronjaranda@mymail.mines.edu>
+Date:   Tue Feb 2 10:48:29 2021 -0700
+
+    UML Diagram
+
+commit 040ebfadcb558cc6eb8c4615cc0ddc563a8d53af
+Author: Aaron Aranda <aaronjaranda@mymail.mines.edu>
+Date:   Tue Feb 2 10:23:14 2021 -0700
+
+    added .gitignore
+
+commit 230ad459436d0c260ea7ae7842a8f9449c680f99
+Author: Aaron Aranda <aaronjaranda@mymail.mines.edu>
+Date:   Tue Feb 2 10:17:45 2021 -0700
+
+    Initial Commit

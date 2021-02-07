@@ -6,14 +6,13 @@ import gameEngine.Moveable;
 import gameEngine.InteractionResult;
 import java.util.Random;
 
-public class UnicornPiece extends GamePiece implements Moveable {
+public class FeyPiece extends GamePiece implements Moveable {
 	private Random randomLocation = new Random();
-	private int location = randomLocation.nextInt();
+	private int location;
 
 
-	public UnicornPiece(char symbol, String name, int location) {
+	public FeyPiece(char symbol, String name, int location) {
 		super(symbol, name, location);
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
@@ -25,18 +24,18 @@ public class UnicornPiece extends GamePiece implements Moveable {
 		return InteractionResult.NONE;
 	}
 	
-	@Override
-	public void draw() {
-		System.out.println('U');
-	}
+	
 	
 	@Override
 	public void move(Drawable[] gameBoard, int playerLocation) {
 		// Moves randomly
-		while (gameBoard[location] != null) {
+		location = this.getLocation();
+		while (gameBoard[location] != null || location == playerLocation) {
 			location = randomLocation.nextInt(GameEngine.BOARD_SIZE);
 		}  
+		gameBoard[this.getLocation()] = null;
 		this.setLocation(location);
+		gameBoard[location] = this;
 	}
 	
 	

@@ -3,7 +3,7 @@ package gameEngine;
 import java.util.ArrayList;
 
 import levelPieces.GamePiece;
-import levelPieces.LevelSetup;
+import gameEngine.LevelSetup;
 
 /**
  * Framework for LevelGame.
@@ -93,7 +93,7 @@ public class GameEngine {
 	 */
 	private void displayInstructions() {
 		System.out.println("* The Game KerPlop *");
-		System.out.println("The object of the game is to capture prizes without being killed.");
+		System.out.println("The object of the game is to loot treasure without being killed.");
 		System.out.println("You need " + Player.POINTS_TO_ADVANCE + 
 				" points to advance, you die after " + Player.POINTS_TO_DIE + " hits.") ;
 	}
@@ -179,7 +179,9 @@ public class GameEngine {
 	 * InteractionResult.KILL).
 	 */
 	public void interaction() {
+		
 		for (GamePiece piece : interactingPieces) {
+			
 			InteractionResult result = piece.interact(gameBoard, player.getLocation());
 			if (result == InteractionResult.GET_POINT) {
 				player.addPoint();

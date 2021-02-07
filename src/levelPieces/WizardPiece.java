@@ -3,9 +3,9 @@ package levelPieces;
 import gameEngine.Drawable;
 import gameEngine.InteractionResult;
 
-public class KangaloPiece extends GamePiece {
+public class WizardPiece extends GamePiece implements Drawable {
 
-	public KangaloPiece(char symbol, String name, int location) {
+	public WizardPiece(char symbol, String name, int location) {
 		super(symbol, name, location);
 	}
 
