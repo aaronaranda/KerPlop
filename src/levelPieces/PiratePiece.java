@@ -1,3 +1,5 @@
+//Authors: Lauren Loe and Aaron Aranda
+
 package levelPieces;
 
 import gameEngine.Drawable;
@@ -29,11 +31,7 @@ public class PiratePiece extends GamePiece implements Moveable{
 		//If pirate is more rightward than player, search left
 				
 		if (this.getLocation() > playerLocation) {
-			System.out.println("Pirate Location: " + this.getLocation());
-			System.out.println("Player Location: " + playerLocation);
 			for (int i = this.getLocation() - 1; i >= 0; i--) {
-				System.out.println("i: " + i);
-				System.out.println("gameBoard[i]: " + gameBoard[i]);
 				if (gameBoard[i] != null && i != playerLocation) {
 					clearShot = false;
 					break;
@@ -43,11 +41,7 @@ public class PiratePiece extends GamePiece implements Moveable{
 				}
 			}
 		} else if (this.getLocation() < playerLocation) {
-			System.out.println("Pirate Location: " + this.getLocation());
-			System.out.println("Player Location: " + playerLocation);
 			for (int i = this.getLocation() + 1; i < gameEngine.GameEngine.BOARD_SIZE; i++) {
-				System.out.println("i: " + i);
-				System.out.println("gameBoard[i]: " + gameBoard[i]);
 				if (gameBoard[i] != null && i != playerLocation) {
 					clearShot = false;
 					 break;

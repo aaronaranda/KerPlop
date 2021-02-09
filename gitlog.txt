@@ -1,3 +1,23 @@
+commit fdb60185acf3f22899bd797de6f6b34bfc674175
+Merge: de6df2a c87d2f7
+Author: Aaron Aranda <aaronjaranda@mymail.mines.edu>
+Date:   Sun Feb 7 16:40:48 2021 -0700
+
+    Merge branch 'main' of https://github.com/aaronaranda/KerPlop
+
+commit de6df2a82d05df3e448b0f7ef419ae8cf9f2447f
+Author: Aaron Aranda <aaronjaranda@mymail.mines.edu>
+Date:   Sun Feb 7 16:39:24 2021 -0700
+
+    added new renamed classes
+
+commit c87d2f753bdee52af65b85c84acee781654d4563
+Merge: 799f428 10cf809
+Author: lloe <lauren.a.l173@gmail.com>
+Date:   Sun Feb 7 16:37:01 2021 -0700
+
+    Merge branch 'main' of https://github.com/aaronaranda/KerPlop
+
 commit 10cf809b13d9811b529fb8ced70bbb114ba4bf90
 Author: Aaron Aranda <aaronjaranda@mymail.mines.edu>
 Date:   Sun Feb 7 16:32:54 2021 -0700
@@ -15,6 +35,31 @@ Author: Aaron Aranda <aaronjaranda@mymail.mines.edu>
 Date:   Sun Feb 7 13:27:17 2021 -0700
 
     removed compile files
+
+commit 799f4281a47e975ab38a01b974905a737bde7df3
+Author: lloe <lauren.a.l173@gmail.com>
+Date:   Thu Feb 4 11:33:18 2021 -0700
+
+    LevelSetup and Movable implimented
+
+commit 60619f1cd6e0fde2786c4c3bb534877cad215f43
+Merge: 3c0be13 7450c36
+Author: lloe <lauren.a.l173@gmail.com>
+Date:   Thu Feb 4 10:15:55 2021 -0700
+
+    Merge branch 'main' of https://github.com/aaronaranda/KerPlop
+
+commit 3c0be1350bbf5df254d3940ea5be5da9e43fedf4
+Author: lloe <lauren.a.l173@gmail.com>
+Date:   Thu Feb 4 10:12:55 2021 -0700
+
+    added game pieces
+
+commit 7450c36a72e7b5afed8d9e7cb357595da3c89ad0
+Author: Aaron Aranda <73726359+aaronaranda@users.noreply.github.com>
+Date:   Tue Feb 2 10:52:14 2021 -0700
+
+    Delete bin directory
 
 commit 7eb0c692ada5a1f04562694f5da0a3ce04c6857c
 Author: Aaron Aranda <aaronjaranda@mymail.mines.edu>
