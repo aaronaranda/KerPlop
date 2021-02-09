@@ -3,7 +3,6 @@
 package gameEngine;
 
 import java.util.ArrayList;
-
 import levelPieces.SkeletonPiece;
 import levelPieces.MagicDoorPiece;
 import levelPieces.GamePiece;
