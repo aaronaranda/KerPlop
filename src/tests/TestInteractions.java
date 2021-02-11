@@ -31,7 +31,7 @@ public class TestInteractions {
 		//treasure on 4, player on 4, get point result
 		TreasurePiece treasure1 = new TreasurePiece('T', "treasure", 4);
 		gameBoard[4] = treasure1;
-		InteractionResult result1 = treasure1.interact(gameBoard, 5);
+		InteractionResult result1 = treasure1.interact(gameBoard, 4);
 		assert(result1 == InteractionResult.GET_POINT);
 	}
 	
@@ -48,7 +48,7 @@ public class TestInteractions {
 		//Wizard on 4, player on 4, kill result
 		WizardPiece wizard1 = new WizardPiece('W', "Wizard", 4);
 		gameBoard[4] = wizard1;
-		InteractionResult result1 = wizard1.interact(gameBoard, 5);
+		InteractionResult result1 = wizard1.interact(gameBoard, 4);
 		assert(result1 == InteractionResult.KILL);
 	}
 	
@@ -116,14 +116,9 @@ public class TestInteractions {
 		InteractionResult result = skeleton.interact(gameBoard, 8);
 		assertEquals(result, InteractionResult.KILL);
 		gameBoard[8] = null;
+
 		
 		//Second Test
-		gameBoard[0] = skeleton;
-		InteractionResult result2 = skeleton.interact(gameBoard, 0);
-		assertEquals(result2, InteractionResult.KILL);
-		gameBoard[0] = null;
-		
-		//Third Test
 		gameBoard[1] = skeleton;
 		//Testing for NONE interaction.
 		InteractionResult result3 = skeleton.interact(gameBoard, 2);
